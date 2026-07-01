@@ -1,0 +1,182 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+p{
+    display:none;
+}
+span{
+    display:inline;
+    gap: 20px;
+}
+
+
+  .box {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+
+    border: 2px solid black;
+    text-align: center;
+    height:120px; /* Centers text vertically */
+    margin: 10px;
+    background-color: lightcoral;
+}
+
+
+h1 {
+    background-color: lightblue;
+    border: 2px solid blue;
+}
+
+p {
+    background-color: lightgreen;
+    border: 2px solid green;
+}
+
+span {
+    background-color: lightcoral;
+    border: 2px solid red;
+}
+
+/* task5?? */
+nav{
+    background-color: lightgray;
+    padding: 2px;
+}
+
+.bold{
+    display: inline;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.main{
+    display: flex;
+}
+.Box{
+     width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 100px;
+    flex-direction: column;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item {
+    width: 120px;
+    padding: 15px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;         
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+

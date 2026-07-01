@@ -1,0 +1,30 @@
+/*universal selector*/
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+font-family: sans-serif;
+
+}
+
+
+/* tag selector */
+div{
+    background-color: rgb(161, 127, 255);
+    height: 100px;
+    width: 100px;
+}
+
+/* grouping selector */
+
+div,main{
+    background-color: azure;
+    height: 100px;
+    width: 100px;
+}
+
+
+/* id selector */
+#main1{
+    background-color: blueviolet;
+}

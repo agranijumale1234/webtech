@@ -1,0 +1,23 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(227, 26, 150);
+  animation-name: Agru;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-radius: 40%;
+}
+
+@keyframes Agru {
+  to {
+    transform: rotate(360deg) scale(4);
+  }
+}

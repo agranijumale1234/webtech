@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Practice</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+
+    <!-- Headings -->
+    <h1>Welcome to HTML</h1>
+    <h2>Learning HTML</h2>
+    <h3>Practice Page</h3>
+
+    <!-- Paragraph -->
+    <p>This is a paragraph.</p>
+
+    <!-- Formatting Tags -->
+    <p>
+        <b>Bold</b><br>
+        <i>Italic</i><br>
+        <u>Underline</u><br>
+        H<sub>2</sub>O<br>
+        x<sup>2</sup><br>
+        <mark>Highlighted Text</mark><br>
+        <del>Deleted Text</del><br>
+        <ins>Inserted Text</ins>
+    </p>
+
+    <!-- Quote -->
+    <blockquote>
+        Practice makes a man perfect.
+    </blockquote>
+
+    <p>
+        Teacher said <q>Learn HTML daily</q>
+    </p>
+
+    <!-- Lists -->
+    <h2>Unordered List</h2>
+    <ul>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+    </ul>
+
+    <h2>Ordered List</h2>
+    <ol>
+        <li>Wake Up</li>
+        <li>Study</li>
+        <li>Exercise</li>
+    </ol>
+
+    <h2>Nested List</h2>
+    <ul>
+        <li>Fruits
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- Description List -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Structure of webpage</dd>
+
+        <dt>CSS</dt>
+        <dd>Styling of webpage</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Functionality of webpage</dd>
+    </dl>
+
+    <!-- Image -->
+    <h2>Image</h2>
+    <img src="image.jpg"
+         alt="Sample Image"
+         width="300"
+         height="200">
+
+    <!-- Anchor Tags -->
+    <h2>Links</h2>
+
+    <a href="https://www.google.com">
+        Google
+    </a>
+
+    <br><br>
+
+    <a href="https://youtu.be/gB-1zBm_6-E?si=6nac3M-lY_BseHwH"
+       target="_blank">
+       YouTube
+    </a>
+
+    <br><br>
+
+    <a href="mailto:test@gmail.com">
+        Send Email
+    </a>
+
+    <br><br>
+
+    <a href="tel:9876543210">
+        Call Now
+    </a>
+
+    <!-- Table -->
+    <h2>Student Table</h2>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+
+        <tr>
+            <td>Agrani</td>
+            <td>20</td>
+            <td>Pune</td>
+        </tr>
+
+        <tr>
+            <td>Rahul</td>
+            <td>21</td>
+            <td>Mumbai</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Colspan Example -->
+    <table border="1">
+        <tr>
+            <th colspan="2">Student Details</th>
+        </tr>
+
+        <tr>
+            <td>Name</td>
+            <td>Agrani</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Rowspan Example -->
+    <table border="1">
+        <tr>
+            <td rowspan="2">HTML</td>
+            <td>Basics</td>
+        </tr>
+
+        <tr>
+            <td>Advanced</td>
+        </tr>
+    </table>
+
+    <!-- Form -->
+    <h2>Registration Form</h2>
+
+    <form>
+
+        <label>Name:</label>
+        <input type="text"
+               placeholder="Enter Name"
+               required>
+
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email"
+               placeholder="Enter Email"
+               required>
+
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password"
+               required>
+
+        <br><br>
+
+        Gender:
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+
+        <br><br>
+
+        Hobbies:
+        <input type="checkbox"> Reading
+        <input type="checkbox"> Sports
+
+        <br><br>
+
+        State:
+        <select>
+            <option>Maharashtra</option>
+            <option>Gujarat</option>
+            <option>Rajasthan</option>
+        </select>
+
+        <br><br>
+
+        Date:
+        <input type="date">
+
+        <br><br>
+
+        Color:
+        <input type="color">
+
+        <br><br>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+    <!-- Audio -->
+    <h2>Audio</h2>
+
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Video -->
+    <h2>Video</h2>
+
+    <video width="400" controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <!-- Iframe -->
+    <h2>YouTube Video</h2>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ">
+    </iframe>
+
+</body>
+</html>

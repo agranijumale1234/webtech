@@ -1,0 +1,46 @@
+ *{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+} 
+
+
+
+
+header{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    position:fixed;
+    top: 0px;
+}
+main{
+    height: 150vh;
+    width: 100%;
+    background-color: rgb(28, 151, 17);
+     margin-top:100px;
+    
+
+}
+
+section{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(42, 110, 165);
+}
+
+article{
+ height: 100px;
+    width: 100%;
+    background-color: rgb(223, 21, 21);
+    position: sticky;
+    top: 100px;                  
+
+}
+footer{
+    height: 300vh;
+    width: 100%;
+    background-color: rgb(28, 28, 34);
+    
+
+}

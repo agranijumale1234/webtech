@@ -1,0 +1,39 @@
+body{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+#box{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(180, 122, 158);
+     transition-duration: 4s;  
+    /* transition-delay: 2s; */
+    
+}
+
+
+/* pseudo class selector to increase its size */
+#box:hover{
+ 
+    /* transition-duration:  use to provide see the timing duration; */
+/* transform: use to change; */
+ /* transform: scale(0); */
+ /* transform: scale(2); */
+ /* transform: scale(0.5); */
+ /* transform: scale(10); */
+ /* transform: scale(-1); */
+ /* transform: rotate(1000deg)  scale(-2); */
+ /*//to move its place */
+  /* transform: translate(200px); */
+   /* transform: translate(-200px); */
+   /* to give to values simulteously */
+   /* transform: translate(0px.-200px); */
+ transform:skew(100deg);
+}
