@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./clone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+ 
+</head>
+<body>
+   <nav class="h-[7vh] bg-black flex justify-between items-center px-6">
+
+    <!-- Left Logo -->
+    <section class="text-3xl text-white">
+        <i class="fa-brands fa-spotify"></i>
+    </section>
+
+    <!-- Center -->
+    <section class="flex items-center gap-3">
+
+        <!-- Home -->
+        <div class="w-12 h-12 rounded-full bg-[#1f1f1f] flex justify-center items-center text-white text-xl cursor-pointer hover:bg-[#2a2a2a]">
+            <i class="fa-solid fa-house"></i>
+        </div>
+
+        <!-- Search Bar -->
+        <div
+            class="w-[500px] h-12 bg-[#1f1f1f] rounded-full flex items-center justify-between px-5">
+
+            <div class="flex items-center gap-4">
+
+                <i class="fa-solid fa-magnifying-glass text-gray-400 text-xl"></i>
+
+                <input
+                    type="text"
+                    placeholder="What do you want to play?"
+                    class="bg-transparent outline-none text-white w-[300px] placeholder-gray-400">
+
+            </div>
+
+            <div class="border-l border-gray-500 pl-4 text-gray-400 text-xl">
+                <i class="fa-solid fa-box"></i>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Right Side -->
+    <section class="flex items-center gap-7">
+
+        <a href="#" class="text-gray-400 font-semibold hover:text-white">Premium</a>
+
+        <a href="#" class="text-gray-400 font-semibold hover:text-white">Support</a>
+
+        <a href="#" class="text-gray-400 font-semibold hover:text-white">Download</a>
+
+        <div class="h-6 border-l border-white"></div>
+
+        <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fa-regular fa-circle-down"></i>
+            Install App
+        </a>
+
+        <a href="#" class="text-gray-400 font-semibold hover:text-white">Sign up</a>
+
+        <button
+            class="bg-white text-black px-8 py-3 rounded-full font-bold hover:scale-105 transition">
+            Log in
+        </button>
+
+    </section>
+
+</nav>
+    
+  <aside class="w-[420px] h-[88vh] bg-[#121212] rounded-lg flex flex-col justify-between">
+
+    <!-- Top -->
+    <div>
+
+        <!-- Library Header -->
+        <div class="flex justify-between items-center px-4 py-4">
+
+            <h2 class="text-white text-[16px] font-semibold">
+                Your Library
+            </h2>
+
+            <button
+                class="flex items-center gap-2 bg-[#242424] px-4 py-2 rounded-full text-white text-[14px] font-semibold">
+
+                <i class="fa-solid fa-plus text-[15px]"></i>
+                Create
+
+            </button>
+
+        </div>
+
+        <!-- Card 1 -->
+        <div class="mx-2 mt-3 bg-[#242424] rounded-lg px-5 py-6">
+
+            <h3 class="text-white text-[15px] font-semibold">
+                Create your first playlist
+            </h3>
+
+            <p class="text-white text-[13px] font-medium mt-2">
+                It's easy, we'll help you
+            </p>
+
+            <button
+                class="mt-5 bg-white text-black text-[14px] font-semibold px-5 py-2 rounded-full">
+                Create playlist
+            </button>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="mx-2 mt-6 bg-[#242424] rounded-lg px-5 py-6">
+
+            <h3 class="text-white text-[15px] font-semibold">
+                Let's find some podcasts to follow
+            </h3>
+
+            <p class="text-white text-[13px] font-medium mt-2">
+                We'll keep you updated on new episodes
+            </p>
+
+            <button
+                class="mt-5 bg-white text-black text-[14px] font-semibold px-5 py-2 rounded-full">
+                Browse podcasts
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="px-5 pb-6">
+
+        <div class="flex flex-wrap gap-x-5 gap-y-2 text-[11px] text-gray-400">
+
+            <a href="#">Legal</a>
+            <a href="#">Safety & Privacy Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookies</a>
+            <a href="#">About Ads</a>
+            <a href="#">Accessibility</a>
+
+        </div>
+
+        <p class="text-white text-[12px] font-medium mt-4">
+            Cookies
+        </p>
+
+        <button
+            class="mt-8 border border-gray-500 rounded-full px-4 py-2 flex items-center gap-2 text-white text-[14px] font-semibold">
+
+            <i class="fa-solid fa-globe"></i>
+            English
+
+        </button>
+
+    </div>
+
+</aside>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-black">
+
+    <!-- Navbar -->
+
+    <nav class="h-[7vh] bg-black flex justify-between items-center px-5">
+
+        <!-- Logo -->
+
+        <section class="text-white text-3xl">
+            <i class="fa-brands fa-spotify"></i>
+        </section>
+
+        <!-- Search -->
+
+        <section class="flex text-white gap-3 items-center">
+
+            <article
+                class="text-white text-xl rounded-full bg-[#2a2a2a] h-[50px] w-[50px] flex justify-center items-center">
+
+                <i class="fa-solid fa-house"></i>
+
+            </article>
+
+            <article
+                class="flex bg-[#1f1f1f] h-[50px] w-[22vw] rounded-full justify-between items-center px-5">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="What do you want to play?"
+                    class="bg-transparent outline-none text-white w-[14vw] border-r border-gray-500">
+
+                <i class="fa-regular fa-window-maximize"></i>
+
+            </article>
+
+        </section>
+
+        <!-- Right -->
+
+        <section class="flex text-white items-center gap-5">
+
+            <article class="flex border-r border-gray-500 pr-5 gap-5">
+
+                <div>Premium</div>
+                <div>Support</div>
+                <div>Download</div>
+
+            </article>
+
+            <article class="flex items-center gap-5">
+
+                <div>
+                    <i class="fa-solid fa-download mr-2"></i>
+                    Install App
+                </div>
+
+                <div>Sign up</div>
+
+                <button
+                    class="bg-white text-black rounded-full w-[120px] h-[45px] font-bold">
+
+                    Log in
+
+                </button>
+
+            </article>
+
+        </section>
+
+    </nav>
+
+
+
+    <!-- Main -->
+
+    <main class="flex gap-2 bg-black p-2 h-[86vh]">
+
+        <!-- Sidebar -->
+
+        <aside
+            class="w-[22%] bg-[#121212] rounded-xl text-white p-4 flex flex-col justify-between overflow-y-auto">
+
+            <div>
+
+                <!-- Header -->
+
+                <div class="flex justify-between items-center mb-6">
+
+                    <h2 class="font-bold text-lg">
+                        Your Library
+                    </h2>
+
+                    <button
+                        class="bg-[#242424] rounded-full px-4 py-2 flex items-center gap-2">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Create
+
+                    </button>
+
+                </div>
+
+                <!-- Playlist -->
+
+                <div class="bg-[#242424] rounded-xl p-5 mb-5">
+
+                    <h3 class="font-bold text-lg">
+                        Create your first playlist
+                    </h3>
+
+                    <p class="text-gray-300 mt-2 text-sm">
+                        It's easy, we'll help you
+                    </p>
+
+                    <button
+                        class="bg-white text-black rounded-full px-5 py-2 mt-5 font-bold">
+
+                        Create playlist
+
+                    </button>
+
+                </div>
+
+                <!-- Podcast -->
+
+                <div class="bg-[#242424] rounded-xl p-5">
+
+                    <h3 class="font-bold text-lg">
+                        Let's find some podcasts to follow
+                    </h3>
+
+                    <p class="text-gray-300 mt-2 text-sm">
+                        We'll keep you updated on new episodes
+                    </p>
+
+                    <button
+                        class="bg-white text-black rounded-full px-5 py-2 mt-5 font-bold">
+
+                        Browse podcasts
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Footer -->
+
+            <div>
+
+                <div class="flex flex-wrap gap-3 text-gray-400 text-xs mb-5">
+
+                    <a href="#">Legal</a>
+
+                    <a href="#">Safety & Privacy Center</a>
+
+                    <a href="#">Privacy Policy</a>
+
+                    <a href="#">Cookies</a>
+
+                    <a href="#">About Ads</a>
+
+                    <a href="#">Accessibility</a>
+
+                </div>
+
+                <p class="font-bold text-sm mb-5">
+                    Cookies
+                </p>
+
+                <button
+                    class="border border-gray-500 rounded-full px-4 py-2 flex items-center gap-2 hover:border-white">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    English
+
+                </button>
+
+            </div>
+
+       </aside>
+        <!-- Right Section -->
+
+        <section class="w-[78%] bg-[#1f1f1f] rounded-xl flex-1 h-full p-2 ">
+
+            <div class="flex justify-between  items-center mb-5 rounded-lg p-1 overflow-y-auto scrollbar-hide">
+                <h2 class="text-white text-bold text-l">Trending Songs</h2>
+                <p class="text-gray-400">Show All</p>
+            </div>
+            <div class="flex gap-4 overflow-x-auto scrollbar-hide">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfhJbpoZ-ZRik_refDungCZMW70Qmp-GyTLM0o9SMCeA&s=10" alt="" class="h-[23vh] w-[170px] rounded-e-md">
+                    <h3 class="text-white font-semibold mt-3">Toh Phir Aao</h3>
+                    <p class="text-gray-400 text-sm mt-1 ">Pritam, Mustafa Zahid
+                    </p>
+                </div>
+                <div>
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR1QyakXxwy4BtBHRtF90ofatqJVoiRwYQh21qXWkV4w&s" alt="" class="h-[23vh] w-[170px] rounded-e-md">
+                    <h3 class="text-white font-semibold mt-3">Arz Kiya Hai</h3>
+                    <p class="text-gray-400 text-sm mt-1 ">Anuv Jain</p>
+                </div>
+                <div>
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6IBC_9oO13gk_Z012KQhQPRitrx5P9ra-cq0OgzJryw&s=10" alt="" class="h-[23vh] w-[170px] rounded-e-md">
+                    <h3 class="text-white font-semibold mt-3">Saree</h3>
+                    <p class="text-gray-400 text-sm mt-1 ">Tanishk bagchi </p>
+                </div>
+                <div>
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCHiFngkVqxFgCDmi8zVXd41XhN2h8Ud8lOaRAKoCJpg&s=10" alt="" class="h-[23vh] w-[170px] rounded-e-md">
+                    <h3 class="text-white font-semibold mt-3">Aarzu(Asim Azhar)</h3>
+                    <p class="text-gray-400 text-sm mt-1 ">Asim ,Azar,noor</p>
+                </div>
+                <div>
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq47QdnHVnFu733jpo2vAix9PAIpjuFyhUkA7y-4k&s" alt="" class="h-[170PX] w-[170px] rounded-e-md ">
+                    <h3 class="text-white font-semibold mt-3">Ban Ja Tu</h3>
+                    <p class="text-gray-400 text-sm mt-1 ">Charan Preet,Badshah</p>
+                </div>
+                <div>
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThfC0co16Ht_lB3wfyMFLVQWWhpLINZcWK3rB4yE3mwQ&s" alt="" class="h-[23vh] w-[170px] rounded-e-md">
+                    <h3 class="text-white font-semibold mt-3">Low Fade</h3>
+                    <p class="text-gray-400 text-sm mt-1 ">Karan Aujla,Mxrci</p>
+                </div>
+          
+            </div>
+            <div class="flex justify-between  items-center mb-5 rounded-lg p-2 overflow-y-auto scrollbar-hide">
+                <h2 class="text-white text-bold text-l">Popular Artists</h2>
+                <p class="text-gray-400">Show All</p>
+            </div>
+            <div class="flex gap-8 overflow-x-auto scrollbar-hide ">
+                <div>
+                    <img class="rounded-full object-cover" src= "data:image/jpeg;base64,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" alt="" class="h-[23vh] w-7170px] rounded-e-md">
+                    <h3 class="text-white font-semibold mt-3">Pritam</h3>
+                    <p class="text-gray-400 text-sm mt-1 ">Artist
+                    </p>
+                </div>
+                <div>
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF6oXHeAnqhsTNMTaUTcpCrHSF6G-K2oUoyo3tDsX6RQ&s=10" alt="" class="h-[20vh] w-[150px] rounded-full object-cover">
+                    <h3 class="text-white font-semibold mt-3">A R Rehman</h3>
+                    <p class="text-gray-400 text-sm mt-1 ">Artist</p>
+                </div>
+                <div>
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsP2P-YPmItM89l8L-NL-oTe6Q1iXY_Y9LZJ89zHfAww&s" alt="" class="h-[20vh] w-[150px] rounded-full">
+                    <h3 class="text-white font-semibold mt-3">Sachin</h3>
+                    <p class="text-gray-400 text-sm mt-1 ">Artist</p>
+                </div>
+                <div>
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCHiFngkVqxFgCDmi8zVXd41XhN2h8Ud8lOaRAKoCJpg&s=10" alt="" class="h-[20vh] w-[150px] rounded-full">
+                    <h3 class="text-white font-semibold mt-3">Vishal-Shekhar</h3>
+                    <p class="text-gray-400 text-sm mt-1 ">Artist</p>
+                </div>
+                <div>
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq47QdnHVnFu733jpo2vAix9PAIpjuFyhUkA7y-4k&s" alt="" class="h-[20vh] w-[150px] rounded-full">
+                    <h3 class="text-white font-semibold mt-3">Astif Aslam</h3>
+                    <p class="text-gray-400 text-sm mt-1 ">Artist</p>
+                </div>
+                <div>
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThfC0co16Ht_lB3wfyMFLVQWWhpLINZcWK3rB4yE3mwQ&s" alt="" class="h-[20vh] w-[150px] rounded-full">
+                    <h3 class="text-white font-semibold mt-3">Anirudh Ravichander</h3>
+                    <p class="text-gray-400 text-sm mt-1 ">Artist</p>
+                </div>
+                
+            </div>
+
+            
+
+            
+               
+          
+        </section>
+
+    </main>
+
+
+
+    <!-- Footer -->
+
+    <footer class="flex justify-between items-center bg-[#1db954] text-white px-5 py-2">
+
+        <p class="
+         w-[90%]">
+
+            We and <b><u>our partners</u></b> use cookies to personalize your
+            experience, show ads based on your interests, and for analytics
+            purposes. By using our website, you agree to our
+            <b><u>Cookie Policy</u></b>.
+
+        </p>
+
+        <i class="fa-solid fa-x cursor-pointer"></i>
+
+    </footer>
+
+</body>
+</html>
